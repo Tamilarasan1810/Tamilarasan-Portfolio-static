@@ -213,7 +213,7 @@ main.tamil-main {
   margin-left: auto;
 }
 
-.about-area .about-content p {
+.about-area .about-content .about-para p {
   line-height: 30px;
   max-width: 610px;
 }
@@ -228,4 +228,118 @@ main.tamil-main {
 
 .section-header h1 span {
   color: var(--primary_color);
+}
+
+.resume-area {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  transition: 0.3s;
+}
+
+.resume-area h4:hover {
+  background: 0 0;
+  color: var(--primary_color);
+}
+
+.resume-area .resume-content .resume-timeline .item {
+  position: relative;
+  padding-left: 74px;
+  padding-bottom: 68px;
+}
+/*  */
+
+.resume-area .resume-content .resume-timeline .item:last-child::after {
+  height: calc(100% - 10px);
+}
+.resume-area .resume-content .resume-timeline .item::after {
+  content: "";
+  background: #333;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+
+  z-index: -1;
+}
+.resume-area .resume-content .resume-timeline .item:hover::after {
+  background: var(--primary_color);
+}
+.resume-area .resume-content .resume-timeline .item::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #656565;
+  margin-left: 1px;
+  border-radius: 50%;
+  left: -6px;
+  top: 7px;
+  transition: 0.3s;
+}
+
+.resume-area .resume-content .resume-timeline .item .date {
+  display: block;
+  margin-bottom: 28px;
+  transition: 0.3s;
+}
+.resume-area .resume-content .resume-timeline .item h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.resume-area .resume-content .resume-timeline .item h2 a {
+  color: #fff;
+  display: block;
+}
+.resume-area .resume-content .resume-timeline .item p {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 18px;
+}
+.resume-area .resume-content .resume-timeline .item p:last-child {
+  margin-bottom: 0;
+}
+.resume-area .resume-content .resume-timeline .item:hover::before {
+  background: var(--primary_color);
+}
+.resume-area .resume-content .resume-timeline .item:hover .date {
+  color: var(--primary_color);
+}
+
+.project-area {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  transition: 0.3s;
+}
+
+.project-area h4:hover {
+  background: 0 0;
+  color: var(--primary_color);
+}
+
+.project-items .project-item {
+  border: 1px solid #565656;
+  border-radius: 20px;
+  transition: 0.3s;
+  position: relative;
+  padding: 44px 48px 41px;
+  margin-bottom: 10px;
+}
+
+.project-items .project-item:last {
+  margin-bottom: 0;
+}
+
+.project-items .project-item h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.project-item:hover {
+  border-color: var(--primary_color);
+  background: #690e0e;
 }
